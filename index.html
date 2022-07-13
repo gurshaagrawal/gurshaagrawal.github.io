@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyResume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     *
     {
@@ -31,10 +32,7 @@
         color:#222;
         line-height: 1.5;
     }
-    p
-    {
-        line-height: 1.5;
-    }
+    
     section
     {
         margin-top: 2rem;
@@ -56,11 +54,11 @@
     }
     .contact li
     {
-        text-align: right;
-        text-transform: uppercase;
+        
         padding: 1rem;
         border-bottom: 1px solid #888;
        color: #888;
+       text-decoration: none;
     }
     .contact ul
     {
@@ -79,7 +77,8 @@
     }
     body
     {
-        padding: 1rem;
+        padding: 3rem 3rem;
+        background: linear-gradient(rgb(226, 222, 222),rgb(226, 222, 222) 50%,rgb(237, 195, 190) 50%,rgb(237, 195, 190));
     }
     ul
     {
@@ -90,6 +89,7 @@
         display: grid;
         grid-template-columns: 8px 8px;
         grid-gap: 20rem;
+        padding: 1rem;
     }
     .timeline .event
     {
@@ -102,79 +102,127 @@
         padding-left: 1rem;
         margin-left: 1rem;
     }
-     
+    .timeline .event > .event
+    {
+        padding-top: 50rem;
+    }
+    .resume
+    {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-gap: 4rem;
+        background-color: white;
+    }
+    .hobbies
+    {
+        padding-bottom: 2rem;
+    }
+    p
+    {
+        padding-left: 1rem;
+    }
+    h2
+    {
+        padding-left: 1rem;
+    }
+    .fa-home
+    {
+        padding-left: 0px;
+    }
+    .lr
+    {
+        display: grid;
+        
+    }
+
     </style>
 </head>
 <body>
-   
-<section class="profile">
-    <h1>Gursha Agrawal</h1>
-    <p><em>I'm a Passionate Web Developer and Coder</em></p>
-    <img src="../images/gursha.jpg" alt="">
-</section>
-<section class="contact">
-    <h2>Contact</h2>
-    <ul>
-        <li>Gupta Colony,Raya</li>
-        <li>gurshaagrawal2003@gmail.com</li>
-        <li>gfg</li>
-        <li>linkedin</li>
-        <li>+91 9149399363</li>
-    </ul>
-</section>
-<section class="objectives">
-   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolores. Dolore a ipsam incidunt eveniet consequuntur, ex dolores magni molestias dolorem nemo qui praesentium ullam, ducimus tempore dignissimos repellat iste optio recusandae tempora doloribus odio architecto est? Quia rem omnis dolor dolorem. Suscipit, est porro. Voluptates aspernatur qui nulla vel.</p>
-</section>
-<section class="skills">
-    <h2>Capabilities/Skills</h2>
-    <ul>
-        <li>
-            <h3>Professional</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <Li>C++</Li>
-                <li>C</li>
-            </ul>
-        </li>
-        <li>
-            <h3>Personal</h3>
-            <ul>
-                <li>Leadership</li>
-                <li>Communication</li>
-            </ul>
-        </li>
-        
-    </ul>
-</section>
-<section class="education">
-    <h2>Education</h2>
-    <ul class="timeline">
-        <li class="event">
-        <span class="duration">2020-2024</span>
-        <div class="content">
-        <h3>B.TECH in Computer Science And Engineering</h3>
-        <p>GLA UNIVERSITY,MATHURA</p>
-        <p>CGPA:7.77</p>
+    <div class="resume">
+        <div class="column">
+            <section class="profile">
+                <h1>Gursha Agrawal</h1>
+                <p><em>I'm a Passionate Web Developer and Coder</em></p>
+                <img src="./gursha.jpg" alt="">
+            </section>
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><pre><i class="fa fa-home" aria-hidden="true"></i>                                           Gupta Colony,Raya</pre></li>
+                    <li><pre><i class="fa fa-envelope" aria-hidden="true"></i>                                 gurshaagrawal2003@gmail.com</pre></li>
+                    <li><pre><a href="https://auth.geeksforgeeks.org/user/gurshaagrawal2003" target="_blank"><i class="fa fa-chrome" aria-hidden="true"></i></a>                                               GeeksForGeeks</pre></li>
+                    <li><pre><a href="https://www.linkedin.com/in/gursha-agrawal-0ba02423a/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>                                                    Linkedin</pre>
+                    <li><pre><i class="fa fa-phone" aria-hidden="true"></i>                                               +91 9149399363</pre></li>
+                </ul>
+            </section>
+            <section class="objectives">
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolores. Dolore a ipsam incidunt eveniet consequuntur, ex dolores magni molestias dolorem nemo qui praesentium ullam, ducimus tempore dignissimos repellat iste optio recusandae tempora doloribus odio architecto est? Quia rem omnis dolor dolorem. Suscipit, est porro. Voluptates aspernatur qui nulla vel.</p>
+            </section>
+            <section class="skills">
+                <h2>Capabilities/Skills</h2>
+                <ul>
+                    <li>
+                        <h3>Professional</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <Li>C++</Li>
+                            <li>C</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Personal</h3>
+                        <ul>
+                            <li>Leadership</li>
+                            <li>Communication</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </section>
         </div>
-        </li>
-        <li class="event">
-            <span class="duration">2018-2020</span>
-            <div class="content">
-                <h3>HIGHER SECONDARY EDUCATION</h3>
-            <p>12th with 86.2% at HPD Saraswati Balika Vidhya Mandir,Vrindavan affilated to C.B.S.E board.</p>
-            </div>
-        </li>
-        <li class="event">
-            <span class="duration">2016-2018</span>
-            <div class="content">
-                <h3>SECONDARY EDUCATION</h3>
-            <p>10th with 88.2% at HPD Saraswati Balika Vidhya Mandir,Vrindavan affilated to C.B.S.E board.</p>
-            </div>
-        </li>
-    </ul>
-</section>
+        <div class="column">
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li class="event">
+                    <span class="duration">2020-2024</span>
+                    <div class="content">
+                    <h3>B.TECH in Computer Science And Engineering</h3>
+                    <p>GLA UNIVERSITY,MATHURA</p>
+                    <p>CGPA:7.77</p>
+                    </div>
+                    </li>
+                    <li class="event">
+                        <span class="duration">2018-2020</span>
+                        <div class="content">
+                            <h3>HIGHER SECONDARY EDUCATION</h3>
+                        <p>12th with 86.2% at HPD Saraswati Balika Vidhya Mandir,Vrindavan affilated to C.B.S.E board.</p>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <span class="duration">2016-2018</span>
+                        <div class="content">
+                            <h3>SECONDARY EDUCATION</h3>
+                        <p>10th with 88.2% at HPD Saraswati Balika Vidhya Mandir,Vrindavan affilated to C.B.S.E board.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Listining to Music</li>
+                    <li>Sketching</li>
+                    <li>Gardening</li>
+                    <li>Playing Musical Instruments</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
 </body>
 </html>
